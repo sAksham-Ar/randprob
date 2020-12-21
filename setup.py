@@ -10,11 +10,11 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="randprob",
-    version="1.0.0",
-    description="Gives random problems form Division 2 in codeforces.",
+    version="1.0.3",
+    description="Gives random problems from Division 2 in codeforces.",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/sAksham-Ar/ytstreamer",
+    url="https://github.com/sAksham-Ar/randprob",
     author="Saksham Arya",
     author_email="aryasaksham@gmail.com",
     license="GPLv3",
@@ -25,7 +25,7 @@ setup(
     ],
     packages=["randprob"],
     include_package_data=True,
-    install_requires=["bs4","requests","pickle"],
+    install_requires=["bs4","requests"],
     entry_points={
         "console_scripts": [
             "randprob=randprob.__main__:randprob",

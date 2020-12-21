@@ -1,0 +1,8 @@
+setup.py
+randprob/__main__.py
+randprob.egg-info/PKG-INFO
+randprob.egg-info/SOURCES.txt
+randprob.egg-info/dependency_links.txt
+randprob.egg-info/entry_points.txt
+randprob.egg-info/requires.txt
+randprob.egg-info/top_level.txt

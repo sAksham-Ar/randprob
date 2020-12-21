@@ -1,5 +1,5 @@
 # streamyt
-A python script that gives random problems form Division 2 in codeforces.
+A python script that gives random problems from Division 2 in codeforces.
 
 
 # Installation

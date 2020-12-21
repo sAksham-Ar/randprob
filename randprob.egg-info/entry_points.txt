@@ -1,0 +1,3 @@
+[console_scripts]
+randprob = randprob.__main__:randprob
+

@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: randprob
+Version: 1.0.2
+Summary: Gives random problems from Division 2 in codeforces.
+Home-page: https://github.com/sAksham-Ar/randprob
+Author: Saksham Arya
+Author-email: aryasaksham@gmail.com
+License: GPLv3
+Description: # streamyt
+        A python script that gives random problems from Division 2 in codeforces.
+        
+        
+        # Installation
+        Install it as below:
+        ```
+        pip3 install randprob
+        ```
+        # Run
+        Just put the problem type and run:
+        ```
+        randprob problem_type(a,b,c,d,e)
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
