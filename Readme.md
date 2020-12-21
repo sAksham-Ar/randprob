@@ -1,4 +1,4 @@
-# streamyt
+# randprob
 A python script that gives random problems from Division 2 in codeforces.
 
 

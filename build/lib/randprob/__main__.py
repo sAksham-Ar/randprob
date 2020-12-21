@@ -47,8 +47,12 @@ def randprob():
         c=input('Another?(y/n)')
         if c=='n':
             break
-    with open("prob.txt", "wb+") as fp:  
-          pickle.dump(problems, fp)
+    if page_num!=1:
+        with open("prob.txt", "ab") as fp:  
+            pickle.dump(problems, fp)
+    else:
+        with open("prob.txt", "wb") as fp:  
+            pickle.dump(problems, fp)
 if __name__ == "__main__":
     randprob()
     
