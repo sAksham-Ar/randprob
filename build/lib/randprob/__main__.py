@@ -6,17 +6,16 @@ import webbrowser
 import random
 import pickle
 def randprob():
+    page_num=1
     try:
         with open("prob.txt", "rb") as fp: 
             problems = pickle.load(fp)
     except:
         problems=[]
     problem_type=argv[1].upper()
-    if len(problems)!=0:
-        problems=[problem for problem in problems if problem[1]==problem_type]
     
-    if len(problems)==0:
-        page_num=1
+    if len([problem for problem in problems if problem[1]==problem_type])==0:
+        
         while 1:
             try:
             
@@ -37,8 +36,11 @@ def randprob():
             else:
                 page_num+=1
     while 1:
+        if len([problem for problem in problems if problem[1]==problem_type and problem[2]==0])==0:
+            print("Questions finished.Please rerun for more.")
+            break
         idx=random.randint(0,len(problems)-1)
-        if problems[idx][2]==1:
+        if problems[idx][2]==1 or problems[idx][1]!=problem_type:
             continue
         webbrowser.open(problems[idx][0]+"/problem/"+problems[idx][1])
         c=input('Solved?(y/n)')
@@ -47,11 +49,7 @@ def randprob():
         c=input('Another?(y/n)')
         if c=='n':
             break
-    if page_num!=1:
-        with open("prob.txt", "ab") as fp:  
-            pickle.dump(problems, fp)
-    else:
-        with open("prob.txt", "wb") as fp:  
+    with open("prob.txt", "wb") as fp:  
             pickle.dump(problems, fp)
 if __name__ == "__main__":
     randprob()
